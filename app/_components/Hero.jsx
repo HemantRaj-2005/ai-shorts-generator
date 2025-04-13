@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import React from "react";
+import Authentication from "./Authentication";
 
 function Hero() {
   return (
@@ -7,10 +8,17 @@ function Hero() {
       <h2 className="font-bold text-6xl text-center">
         AI Youtube Short Video Generator
       </h2>
-      <p className="mt-4 text-2xl text-center text-gray-400">🤖AI generates scripts, images, and voiceover in seconds.⚡Create, edit, publish and engaging shorts with ease!</p>
+      <p className="mt-4 text-2xl text-center text-gray-400">
+        🤖AI generates scripts, images, and voiceover in seconds.⚡Create, edit,
+        publish and engaging shorts with ease!
+      </p>
       <div className="mt-7 gap-8 flex">
-        <Button size="lg" variant="secondary">Explore</Button>
-        <Button size="lg">Get Started</Button>
+        <Button size="lg" variant="secondary">
+          Explore
+        </Button>
+        <Authentication>
+          <Button size="lg">Get Started</Button>
+        </Authentication>
       </div>
     </div>
   );
